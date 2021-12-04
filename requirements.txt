@@ -1,6 +1,2 @@
 streamlit==1.2.0
-PIL==8.4.0
-ComputerVisionClient
-OperationStatusCodes
-VisualFeatureTypes
-CognitiveServicesCredentials
+Pillow==8.4.0
