@@ -8,9 +8,13 @@ import os
 from PIL import Image
 import sys
 import time
+import json
 
-KEY = "590cfd151e034cdba7f711cee3d7da05"
-ENDPOINT = "https://20211204hirata.cognitiveservices.azure.com/"
+with open('serected.json') as f:
+    secret = json.load(f)
+
+KEY = secret['KEY']
+ENDPOINT = secret['ENDPOINT']
 
 computervision_client = ComputerVisionClient(ENDPOINT, CognitiveServicesCredentials(KEY))
 
